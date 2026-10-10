@@ -1,6 +1,6 @@
 # 搜索原型技术笔记
 
-本仓实测数据、选型版本与 API 坑的唯一落点。高层判断在 [AGENTS.md](../AGENTS.md)，定位与流程在 [README.md](../README.md)。
+本仓实测数据、选型版本与 API 坑的唯一落点。关键难点在 [index-difficulties.md](index-difficulties.md)，定位与流程在 [README.md](../README.md)。
 
 2026-10-10 本机实测（Linux、Python 3.14、SQLite 3.46.1、rustc 1.93.1）；数据会过时，采信前重跑。
 
