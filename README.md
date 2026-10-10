@@ -13,6 +13,17 @@
 
 目标不看仓库里有多少代码，看回流了多少方法、多少原型被判定该进 `apps/` 或该删。
 
+## 实验
+
+1. **本地全文搜索 demo**（`searchdemo.py`）：SQLite FTS5 + trigram + BM25，零服务、零分词、Python 自带。实测本仓 6189 篇 Markdown 建索引 4.1 秒，命中按相关度排序（`rg` 只答「有没有」，它答「谁最相关」）。
+
+   ```
+   python3 searchdemo.py build <仓库根> 索引.db
+   python3 searchdemo.py search 索引.db 新鲜度
+   ```
+
+   已知坑：查询词不足三字零结果（trigram 按三字滑窗建索引），用 `LIKE '%词%'` 兜底。
+
 ## 许可
 
 [Apache License 2.0](LICENSE)
