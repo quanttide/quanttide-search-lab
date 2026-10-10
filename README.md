@@ -15,14 +15,13 @@
 
 ## 实验
 
-1. **本地全文搜索 demo**（`searchdemo.py`）：SQLite FTS5 + trigram + BM25，零服务、零分词、Python 自带。实测本仓 6189 篇 Markdown 建索引 4.1 秒，命中按相关度排序（`rg` 只答「有没有」，它答「谁最相关」）。
+1. **本地全文搜索原型**（tantivy + jieba）：倒排索引 + BM25，零服务，中文接 jieba 分词。
 
    ```
-   python3 searchdemo.py build <仓库根> 索引.db
-   python3 searchdemo.py search 索引.db 新鲜度
+   cargo run --release -- <仓库根> [索引目录] [查询...]
    ```
 
-   已知坑：查询词不足三字零结果（trigram 按三字滑窗建索引），用 `LIKE '%词%'` 兜底。
+   实测本仓 6220 篇 Markdown，索引 + 查询 0.48 秒；两字词「索引」命中且排序正确（FTS5 trigram 在两字词上零结果）。选型、实测数据与 API 坑见 [docs/tech-notes.md](docs/tech-notes.md)。
 
 ## 许可
 

@@ -1,0 +1,9 @@
+[package]
+name = "quanttide-search-lab"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+tantivy = "0.26"
+tantivy-jieba = "0.21"

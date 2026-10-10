@@ -1,0 +1,3 @@
+target/
+search-index/
+*.db
