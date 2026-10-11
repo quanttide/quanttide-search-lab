@@ -2,6 +2,10 @@
 
 `quanttide-search-lab` 的 AI 工作约定。定位与回流流程的事实源在 [README.md](README.md)；难点展开与实测证据在 [docs/index-difficulties.md](docs/index-difficulties.md)，实测数据、选型版本与 API 坑在 [docs/tech-notes.md](docs/tech-notes.md)。
 
+## 实验取向
+
+不要为了「安全」「可靠」而加固程序细节——防御式校验、错误兜底、抽象封装，在实验室里都是拖延。原型只活一次实验：猜想来了，用最符合直觉的方式验证——直接跑、直接看输出、直接下结论。判据是「结论可判定」，不是「代码健壮」。
+
 ## 关键难点
 
 建索引不难（6223 篇 0.48 秒），难的是让索引可信、让改动可判定：
