@@ -27,6 +27,8 @@
 
 3. **搜索-读文件配对率实测**（2026-10-11）：回答评测的前置问题「日志里有多少搜索能配上真值」——去重后 25386 条事件总配对率 13.3%，专用搜索 51.0%、shell 仅 7.9%（grep 结果自带内容，不必开文件）；专用搜索配对子集约 1600 题足以支撑考题集。记录见 [docs/2026-10-11-pairing-rate.md](docs/2026-10-11-pairing-rate.md)，脱敏配对样例在 `data/paired-sample.jsonl`。
 
+4. **语料关联与去重（corpus-linking）**：把 46 个领域仓的 Markdown 语料切片段、本地向量化（bge-m3，离线，22811 条），在向量上找重复、找关联、建索引——[索引的难点](docs/index-difficulties.md) 里「副本要等于真相」与「镜像去重」两条，这里用向量相似度重做了一遍。首轮查出 586 对高相似（阈值 0.90，涉及 946 条，其中跨领域 72 对）。脚本、报告与判据见 [examples/corpus-linking/](examples/corpus-linking/)。
+
 ### 能搜什么
 
 - 任意目录下的 **Markdown 正文**（`.md`，递归时跳过 `.git`、`node_modules`、`target`、`.venv`），中英文都行：中文靠 jieba 分词，两字词「索引」能搜，英文词 `tantivy` 也能搜。
