@@ -1,6 +1,6 @@
 # 评测第一仗：考题集、baseline 与返回形态
 
-评测的判断与尺子在洞察仓[搜索好不好用怎么判断](../../../data/insight/default/search-evaluation.md)，近景安排在路线图[当前优先](../../../data/roadmap/intro/index.md)。本篇只管这一仗怎么打：考题集、指标、对照与队列。
+评测的判断与尺子在洞察仓[搜索好不好用怎么判断](../../../data/insight/evaluation/index.md)，近景安排在路线图[当前优先](../../../data/roadmap/intro/index.md)。本篇只管这一仗怎么打：考题集、指标、对照与队列。
 
 适用边界：只评专用搜索行为这一层——shell 行为不经过搜索工具，AI 直接从命令输出拿答案。真值的存在性已由[配对率实测](2026-10-11-pairing-rate.md)验证：专用搜索配对率 51.0%，约 1600 题的规模足以建考题集；查询分布的事实源在 [hermes-session-analyzer 研究记录](2026-10-11-hermes-session-analyzer.md)。
 
