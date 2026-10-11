@@ -23,6 +23,8 @@
 
    实测本仓 6220 篇 Markdown，索引 + 查询 0.48 秒；两字词「索引」命中且排序正确（FTS5 trigram 在两字词上零结果）。选型、实测数据与 API 坑见 [docs/tech-notes.md](docs/tech-notes.md)。
 
+2. **本机会话搜索行为研究**（2026-10-11）：分析 `apps/hermes-session-analyzer` 已有的 29550 条真实 AI 搜索事件，回答路线图「AI 怎么查」——89.1% 的搜索是 shell 命令而非搜索框，专用搜索查询中位仅 34 字符，连环搜占 43.9%。记录见 [docs/2026-10-11-hermes-session-analyzer.md](docs/2026-10-11-hermes-session-analyzer.md)，脱敏查询样例在 `data/search-queries-sample.jsonl`。
+
 ### 能搜什么
 
 - 任意目录下的 **Markdown 正文**（`.md`，递归时跳过 `.git`、`node_modules`、`target`、`.venv`），中英文都行：中文靠 jieba 分词，两字词「索引」能搜，英文词 `tantivy` 也能搜。

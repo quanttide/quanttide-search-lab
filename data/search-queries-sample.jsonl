@@ -1,0 +1,96 @@
+{"origin": "zed", "tool": "terminal", "query": "grep -rn \"工作台\\|Workbench\\|workbench\" --include=*.md . 2>/dev/null"}
+{"origin": "opencode", "tool": "grep", "query": "stage_needs_user_input\\)|stage.*path|install.*command|symlink|ln.*hermes"}
+{"origin": "pi", "tool": "bash", "query": "ls -la docs/archive/ 2>/dev/null || echo \"directory does not exist\""}
+{"origin": "zed", "tool": "find_path", "query": "quanttide-data/**/CHANGELOG.md"}
+{"origin": "zed", "tool": "list_directory", "query": "quanttide-pay/packages/quanttide-pay-toolkit/packages/go/pkg"}
+{"origin": "zed", "tool": "find_path", "query": "apps/qtdata/src/**/*.rs"}
+{"origin": "zed", "tool": "find_path", "query": "**/specification/**/*.md"}
+{"origin": "hermes", "tool": "search_files", "query": "pi*"}
+{"origin": "zed", "tool": "list_directory", "query": "quanttide-pay/apps/qtcloud-pay"}
+{"origin": "zed", "tool": "find_path", "query": "quanttide-project/apps/qtcloud-project/src/studio/lib/**/*.dart"}
+{"origin": "zed", "tool": "list_directory", "query": "quanttide/domains/quanttide-human"}
+{"origin": "opencode", "tool": "bash", "query": "# Check what's in the Tasker directory specifically with a short timeout\ntimeout 8 ls \"/run/user/1000/gvfs/mtp:host=[device]/内部存储设备/Tasker/\" 2>&1"}
+{"origin": "hermes-backup", "tool": "terminal", "query": "grep -A 5 'stt:' ~/.hermes/config.yaml"}
+{"origin": "zed", "tool": "terminal", "query": "git rm -f assets/videos/studio.mp4 && git --no-optional-locks status --short && ls assets/videos/ 2>/dev/null; echo \"---\""}
+{"origin": "zed", "tool": "list_directory", "query": "quanttide-org/data/profile/orgs/qttech"}
+{"origin": "pi", "tool": "memory_search", "query": "studio 分层 lib/models 模型层 消费方 views screens cli"}
+{"origin": "zed", "tool": "find_path", "query": "**/pubspec.yaml"}
+{"origin": "zed", "tool": "find_path", "query": "**/archive/**"}
+{"origin": "hermes-backup", "tool": "terminal", "query": "grep -B2 -A4 \"^model:\" ~/.hermes/config.yaml | head -10 && grep -iE \"glm|zhipu|bigmodel\" ~/.hermes/config.yaml | head -5"}
+{"origin": "dsh", "tool": "glob", "query": "apps/qtcloud-health/docs/dev-guide/add/*.md"}
+{"origin": "zed", "tool": "terminal", "query": "ls .git/modules/ && cat .git/config && cat data/library/.git && echo --- && cat data/roadmap/.git"}
+{"origin": "zed", "tool": "list_directory", "query": "quanttide-tech/apps/qtclass/src"}
+{"origin": "dsh", "tool": "glob", "query": "**/STATUS*.md"}
+{"origin": "hermes", "tool": "search_files", "query": "def record_audio|arecord|sox|pyaudio|sd\\.rec|sounddevice"}
+{"origin": "zed", "tool": "terminal", "query": "git checkout -- src/provider && ls src/provider/ && git --no-optional-locks status --short src/provider/ | head -3"}
+{"origin": "zed", "tool": "terminal", "query": "ossutil ls oss:// 2>&1 | head -10"}
+{"origin": "dsh", "tool": "grep", "query": "'/status'|'/practice'|'/crisis'|'/record/journal'|go\\('/record'\\)|push\\('/record'\\)"}
+{"origin": "zed", "tool": "list_directory", "query": "quanttide-tech/apps/qtdata/src/studio"}
+{"origin": "pi", "tool": "memory_search", "query": "execute 领域 profile journal studio cli site 清单 任务"}
+{"origin": "hermes", "tool": "search_files", "query": "*settings*"}
+{"origin": "pi", "tool": "memory_search", "query": "教程 tutorial 文档 改写 易懂 反思"}
+{"origin": "opencode", "tool": "glob", "query": "**/{docker-compose*,Dockerfile*,.env*,*.sh,*.toml,Makefile,justfile}"}
+{"origin": "zed", "tool": "find_path", "query": "**/workspace.md"}
+{"origin": "hermes", "tool": "search_files", "query": "sounddevice\\|query_devices\\|default.device\\|audio.*device"}
+{"origin": "zed", "tool": "list_directory", "query": "quanttide-strategy/apps/qtstrategy/src/site"}
+{"origin": "hermes", "tool": "search_files", "query": "### Scene"}
+{"origin": "dsh", "tool": "glob", "query": "apps/qthealth/src/studio/test/*.dart"}
+{"origin": "zed", "tool": "list_directory", "query": "quanttide-tech/apps/qtcloud/src/studio/lib/models"}
+{"origin": "zed", "tool": "terminal", "query": "grep -nE \"qtclass|qtcloud-course|量潮课堂|课程云\" README.md | head -20; echo \"=== CHANGELOG ===\"; grep -nE \"qtclass|qtcloud-course\" CHANGELOG.md | head -10"}
+{"origin": "pi", "tool": "memory_search", "query": "发布 tag"}
+{"origin": "pi", "tool": "memory_search", "query": "test 设计 gallery handbook 事实源"}
+{"origin": "zed", "tool": "terminal", "query": "echo \"== memory tags ==\"; git tag | tail -5; echo \"== parent 里对 memory 版本的引用 ==\"; grep -rn \"memory submodule to v\\|memory.*v1\\.\" CHANGELOG.md | head -5"}
+{"origin": "hermes", "tool": "search_files", "query": "Transcribed|Filtered Whisper hallucination"}
+{"origin": "pi", "tool": "session_search", "query": "test 步骤 用例 设计 照用例设计测试 validate-usecases"}
+{"origin": "zed", "tool": "find_path", "query": "docs/**/index.md"}
+{"origin": "zed", "tool": "list_directory", "query": "quanttide-product/data/journal"}
+{"origin": "zed", "tool": "list_directory", "query": "quanttide-data/docs"}
+{"origin": "hermes", "tool": "search_files", "query": "record_key|pyaudio|PyAudio|input_device_index|device_index|DEFAULT_INPUT"}
+{"origin": "zed", "tool": "find_path", "query": "quanttide-business/apps/qtdata/src/studio/test/**/*.dart"}
+{"origin": "hermes", "tool": "search_files", "query": "sounddevice\\|audio.*device\\|default.device\\|input_device\\|query_devices"}
+{"origin": "dsh", "tool": "grep", "query": "material.*outline|outline.*draft|draft.*final"}
+{"origin": "pi", "tool": "memory_search", "query": "data profile init quanttide-innov"}
+{"origin": "hermes-backup", "tool": "terminal", "query": "lspci 2>/dev/null | grep -iE \"vga|3d|display\"; echo; echo \"=== 旧版本是否在任何源里 ===\"; apt-cache madison libnvidia-gl-580 2>/dev/null | head -5"}
+{"origin": "zed", "tool": "list_directory", "query": "data/qtclass-private/src"}
+{"origin": "pi", "tool": "memory_search", "query": "memory_replace 匹配失败"}
+{"origin": "dsh", "tool": "grep", "query": "FastAPI|uvicorn|Python|pytest|uv |SQLModel|Pydantic|flask|django"}
+{"origin": "dsh", "tool": "glob", "query": "**/*journal*"}
+{"origin": "pi", "tool": "session_search", "query": "软件工程手册 handbook categories frameworks languages 框架构想"}
+{"origin": "zed", "tool": "list_directory", "query": "quanttide-delib/packages"}
+{"origin": "zed", "tool": "list_directory", "query": "quanttide-data/apps/qtdata/tests"}
+{"origin": "zed", "tool": "terminal", "query": "ls -d .tmp-archive-inspect 2>&1; echo \"---\"; ls -la data/archive.local-backup"}
+{"origin": "hermes", "tool": "search_files", "query": "repository|homepage|url|github"}
+{"origin": "zed", "tool": "find_path", "query": "apps/qtcloud-auth/src/**/*.py"}
+{"origin": "dsh", "tool": "grep", "query": "\"id\": \"story-|\"title\": \"(提醒已推送失败|.*驳回.*)\""}
+{"origin": "hermes", "tool": "search_files", "query": "models-store|modelsStore|ModelsStore"}
+{"origin": "pi", "tool": "bash", "query": "grep -n '[“”]' docs/bylaw/index.md; echo ---; grep -n '^\\*\\*' docs/bylaw/index.md"}
+{"origin": "hermes", "tool": "search_files", "query": "def _transcribe_local"}
+{"origin": "hermes", "tool": "search_files", "query": "voice.*record_key\\|ctrl.b\\|record_key\\|push.*talk"}
+{"origin": "pi", "tool": "memory_search", "query": "Zed [domain] GLM 配置 default_model"}
+{"origin": "dsh", "tool": "grep", "query": "\\.lock\\(\\)|logout|loggedIn"}
+{"origin": "zed", "tool": "list_directory", "query": "apps/qtclass/src/studio/lib/services"}
+{"origin": "zed", "tool": "list_directory", "query": "quanttide-platform/apps/qtcloud-knowl/src/cli"}
+{"origin": "dsh", "tool": "grep", "query": "'分类'|'优先级'"}
+{"origin": "hermes", "tool": "search_files", "query": "*.md"}
+{"origin": "pi", "tool": "session_search", "query": "between entity process 三个 yaml 映射表 qtcloud-work-cli-category"}
+{"origin": "opencode", "tool": "grep", "query": "_voice_key|voice.*key.*bind|record_key.*prompt|add.*key.*binding"}
+{"origin": "pi", "tool": "session_search", "query": "fiction work profile 认知地图 index 创作动机 创作方法 创作困境 知识图谱"}
+{"origin": "pi", "tool": "session_search", "query": "Xiaomi token plan Zed 配置 xiaomi-token-plan provider"}
+{"origin": "pi", "tool": "session_search", "query": "Rust 五段 完成 报告 src/criterion src/task src/workflow mod.rs 文件清单"}
+{"origin": "zed", "tool": "list_directory", "query": "quanttide-course/data/profile/production-internship/lesson2-release"}
+{"origin": "pi", "tool": "memory_search", "query": "飞书 任务 执行云"}
+{"origin": "dsh", "tool": "grep", "query": "material|outline"}
+{"origin": "pi", "tool": "memory_search", "query": "学习 course 课程 lesson"}
+{"origin": "dsh", "tool": "grep", "query": "密码云"}
+{"origin": "hermes", "tool": "terminal", "query": "# Search for the actual voice input text in the logs - it's embedded in the msg field\ngrep -oP \"msg='\\[Voice input[^']*\" ~/.hermes/logs/agent.log | head -5"}
+{"origin": "dsh", "tool": "bash", "query": "PUB_HOSTED_URL=[url] flutter pub remove cryptography 2>&1 | tail -1 && grep -A8 \"^dependencies:\" pubspec.yaml"}
+{"origin": "pi", "tool": "memory_search", "query": "Flutter 项目初始化 惯例 qtcloud studio"}
+{"origin": "opencode", "tool": "glob", "query": "**/*.rs"}
+{"origin": "pi", "tool": "memory_search", "query": "poc-6-9 qtconnect prototype review"}
+{"origin": "dsh", "tool": "grep", "query": "\"id\": \"story-|\"title\": \"(同步已失败|.*驳回.*)\""}
+{"origin": "pi", "tool": "memory_search", "query": "环境 命令 路径"}
+{"origin": "hermes", "tool": "search_files", "query": "InputStream\\|samplerate\\|sd\\.rec"}
+{"origin": "dsh", "tool": "grep", "query": "app_drawer|AppDrawer"}
+{"origin": "pi", "tool": "session_search", "query": "qtcloud-work toolkit 依赖 复制 回到 重构"}
+{"origin": "hermes", "tool": "session_search", "query": "[domain] OR zai OR \"Token Plan\" OR coding/paas"}
+{"origin": "pi", "tool": "memory_search", "query": "写作 风格 措辞 文档"}
