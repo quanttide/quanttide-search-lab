@@ -25,6 +25,8 @@
 
 2. **本机会话搜索行为研究**（2026-10-11）：分析 `apps/hermes-session-analyzer` 已有的 29550 条真实 AI 搜索事件，回答路线图「AI 怎么查」——89.1% 的搜索是 shell 命令而非搜索框，专用搜索查询中位仅 34 字符，连环搜占 43.9%。记录见 [docs/2026-10-11-hermes-session-analyzer.md](docs/2026-10-11-hermes-session-analyzer.md)，脱敏查询样例在 `data/search-queries-sample.jsonl`。
 
+3. **搜索-读文件配对率实测**（2026-10-11）：回答评测的前置问题「日志里有多少搜索能配上真值」——去重后 25386 条事件总配对率 13.3%，专用搜索 51.0%、shell 仅 7.9%（grep 结果自带内容，不必开文件）；专用搜索配对子集约 1600 题足以支撑考题集。记录见 [docs/2026-10-11-pairing-rate.md](docs/2026-10-11-pairing-rate.md)，脱敏配对样例在 `data/paired-sample.jsonl`。
+
 ### 能搜什么
 
 - 任意目录下的 **Markdown 正文**（`.md`，递归时跳过 `.git`、`node_modules`、`target`、`.venv`），中英文都行：中文靠 jieba 分词，两字词「索引」能搜，英文词 `tantivy` 也能搜。
