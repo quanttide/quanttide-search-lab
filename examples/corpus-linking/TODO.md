@@ -1,6 +1,6 @@
 # TODO
 
-[ROADMAP.md](./ROADMAP.md) 的执行清单。每条给出可跑判据，判据通过才勾选；`[ ]` 未做，`[x]` 已做。
+[ROADMAP.md](docs/dev-guide/roadmap.md) 的执行清单。每条给出可跑判据，判据通过才勾选；`[ ]` 未做，`[x]` 已做。
 
 **数据源**：本地 `~/repos/quanttide/domains/`，全程离线，不依赖 GitHub。
 

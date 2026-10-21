@@ -14,7 +14,7 @@
 | 找重复 | 同一内容多处写了、口径不一致 | 重复对清单 |
 | 建索引 | 想找某主题时能快速定位 | 可查询的向量索引 |
 
-阶段计划见 [ROADMAP.md](ROADMAP.md)，执行清单见 [TODO.md](TODO.md)。
+阶段计划见 [ROADMAP.md](docs/dev-guide/roadmap.md)，执行清单见 [TODO.md](TODO.md)。
 
 ## 状态
 
