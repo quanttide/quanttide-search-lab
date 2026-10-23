@@ -417,13 +417,13 @@ updated_at: 2026-10-11
 
 基准 `product-000001`  quanttide-product#AGENTS.md
 
-1. - `apps/` — 可部署应用 - `packages/toolkit` — 领域共享库/工具集 - `examples/quanttide-product-lab` — 实验室——实验性/原型项目 - `docs/` — 领域文档
+1. - `apps/` — 可部署应用 - `packages/toolkit` — 领域共享库/标准库 - `examples/quanttide-product-lab` — 实验室——实验性/原型项目 - `docs/` — 领域文档
 
 **对比 `strategy-000001`**  quanttide-strategy#AGENTS.md
 
 ```diff
-- - `apps/` — 可部署应用 - `packages/toolkit` — 领域共享库/工具集 - `examples/quanttide-product-lab` — 实验室——实验性/原型项目 - `docs/` — 领域文档
-+ - `apps/` — 可部署应用 - `packages/toolkit` — 领域共享库/工具集 - `examples/quanttide-strategy-lab` — 实验室——实验性/原型项目 - `docs/` — 领域文档
+- - `apps/` — 可部署应用 - `packages/toolkit` — 领域共享库/标准库 - `examples/quanttide-product-lab` — 实验室——实验性/原型项目 - `docs/` — 领域文档
++ - `apps/` — 可部署应用 - `packages/toolkit` — 领域共享库/标准库 - `examples/quanttide-strategy-lab` — 实验室——实验性/原型项目 - `docs/` — 领域文档
 ```
 
 
